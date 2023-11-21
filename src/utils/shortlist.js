@@ -6,12 +6,11 @@ const shortlist = (id) => {
     .post(reqURL)
     .then((res) => {
       if (res.status === 200) {
-        console.log(res.data.satus);
         return res.data.satus;
       }
     })
-    .catch((el) => {
-      console.log(el);
+    .catch((err) => {
+      console.log(err);
       return undefined;
     });
 };
