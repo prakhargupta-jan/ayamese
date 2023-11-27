@@ -6,7 +6,7 @@ const shortlist = (id) => {
     .post(reqURL)
     .then((res) => {
       if (res.status === 200) {
-        return res.data.satus;
+        return res.data.status;
       }
     })
     .catch((err) => {
